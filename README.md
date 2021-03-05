@@ -14,3 +14,6 @@ Six features(columns) in the dataset are categorical; the exploratory data analy
 
 
 ![image](https://user-images.githubusercontent.com/73043768/110136812-c09c4d00-7d95-11eb-924a-e1322fb7f5b6.png)
+
+![image](https://user-images.githubusercontent.com/73043768/110137405-710a5100-7d96-11eb-94be-68802780c976.png)
+
