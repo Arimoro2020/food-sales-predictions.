@@ -19,3 +19,9 @@ From the Clusterplot below, the Tier2 & Tier3 Outlet Location Types seem to be m
 
 
 ![image](https://user-images.githubusercontent.com/73043768/110137699-c6466280-7d96-11eb-8325-ca737385ec65.png)
+
+
+Model Building:
+
+
+Summary of the Results:
