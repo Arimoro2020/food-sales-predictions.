@@ -39,3 +39,4 @@ RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
 
 
 Summary of the Results:
+Mean Absolute Error (MAE) was used for evaluating the performance of the models. For the LASSO model, Training MAE was 834 and Testing MAE was 836. The Random Forest with bagging model improved significantly on the performance of the LASSO model. Its Training MAE was 742 and Testing MAE was 753. Granted the lower performance of the LASSO, it did help identify Item MPR, OUT027, & Supermarket Type1 features to be the ones most associated with higher predicted sales. Of the products, seafood stands out as the item type most associated with higher predicted sales.
