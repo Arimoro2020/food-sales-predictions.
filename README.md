@@ -1,7 +1,7 @@
 # food-sales-predictions.
 
 Overview/ Definition of Problem:
-This is best framed as a unidimentional regression which predicts sales for food items at various stores, with the aim of highlighting features most associated with higher predicted sales, to help the retailer undestand the properties of products and outlets that play crucial roles in increasing sales.
+This is best framed as a unidimentional regression which predicts sales for food items at various stores; with the aim of highlighting features most associated with higher predicted sales, to help the retailer undestand the properties of products and outlets that play crucial roles in increasing sales.
 
 Dataset:
 The original dataset has 8523 entries with 12 columns and a total 3873 missing values; 1463 missing values in the Item Weight column and 2410 missing values in the Outlet Size column. There are several syntax errors within the Item Fat Content classes.
