@@ -43,16 +43,3 @@ Mean Absolute Error (MAE) was used for evaluating the performance of the models.
 
 Here is the Data Dictionary for this dataset:
 
-Variable Name	Description/n
-Item_Identifier	Unique product ID/n
-Item_Weight	Weight of product/n
-Item_Fat_Content	Whether the product is low fat or regular/n
-Item_Visibility	The percentage of total display area of all products in a store allocated to the particular product/n
-Item_Type	The category to which the product belongs/n
-Item_MRP	Maximum Retail Price (list price) of the product/n
-Outlet_Identifier	Unique store ID/n
-Outlet_Establishment_Year	The year in which store was established/n
-Outlet_Size	The size of the store in terms of ground area covered/n
-Outlet_Location_Type	The type of area in which the store is located/n
-Outlet_Type	Whether the outlet is a grocery store or some sort of supermarket/n
-Item_Outlet_Sales	Sales of the product in the particular store. This is the target variable to be predicted./n
