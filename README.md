@@ -10,6 +10,6 @@ Data Cleaning & preparation:
 Dealt with Item Weight missing values by inferring values of an Item from other entries based on the Item Identifier. Also corrected for syntax errors in the Item Fat Content classes. Outlet Size column was dropped because it was impossible to inferr the missing values from the original dataset, or to impute values correctly.
 
 Exploratory Data Analysis:
-Six features(columns) in the dataset are categorical; the exploratory data analysis thus included the use of boxplot and clustermap that helped understand the data and trends within the data.
+Six features(columns) in the dataset are categorical; the exploratory data analysis thus included the use of boxplot(interactive plot) and clustermap that helped understand the data and trends within the data.
 
 
