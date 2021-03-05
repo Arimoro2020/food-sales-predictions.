@@ -13,3 +13,4 @@ Exploratory Data Analysis:
 Six features(columns) in the dataset are categorical; the exploratory data analysis thus included the use of boxplot(interactive plot) and clustermap that helped understand the data and trends within the data.
 
 
+![image](https://user-images.githubusercontent.com/73043768/110136812-c09c4d00-7d95-11eb-924a-e1322fb7f5b6.png)
