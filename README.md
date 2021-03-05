@@ -21,7 +21,21 @@ From the Clusterplot below, the Tier2 & Tier3 Outlet Location Types seem to be m
 ![image](https://user-images.githubusercontent.com/73043768/110137699-c6466280-7d96-11eb-8325-ca737385ec65.png)
 
 
-Model Building:
+Model Building: Categorical columns were transformed into dummy variables for macine learning. Based on the fact that the Target/ predicted variable is numeric, regression model was considered. Also, given that the exploratory data analysis did not reveal multicollinearity between the variables, linear regression was first option. However, with nine predictor variables, a linear regression model would appear compllicated and there may be issues of overfitting to the model. LASSO regression eliminates this problem by culling predictor variables in order to simplify the model. For this, alpha was set to 16 as shown below:
+
+Lasso(alpha=16, copy_X=True, fit_intercept=True, max_iter=1000, normalize=False,
+      positive=False, precompute=False, random_state=None, selection='cyclic',
+      tol=0.0001, warm_start=False)
+      
+A second model using RandomForest was build as a comparison with the LASSO model for predicting the Item Outlet Sales:
+
+RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=5, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=102, n_jobs=None, oob_score=False,
+                      random_state=None, verbose=0, warm_start=False)
 
 
 Summary of the Results:
