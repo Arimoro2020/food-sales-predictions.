@@ -4,7 +4,7 @@ Overview/ Definition of Problem:
 This is best framed as a unidimentional regression which predicts sales for food items at various stores; with the aim of highlighting features most associated with higher predicted sales, to help the retailer undestand the properties of products and outlets that play crucial roles in increasing sales.
 
 Dataset:
-The original dataset has 8523 entries with 12 columns and a total 3873 missing values; 1463 missing values in the Item Weight column and 2410 missing values in the Outlet Size column. There are several syntax errors within the Item Fat Content classes.
+The original dataset has 8523 entries with 12 columns and a total 3873 missing values; 1463 missing values in the Item Weight column and 2410 missing values in the Outlet Size column. There are several syntax errors within the Item Fat Content classes. Please find the Data Dictionary for the dataset at the bottom.
 
 Data Cleaning & preparation:
 Dealt with Item Weight missing values by inferring values of an Item from other entries based on the Item Identifier. Also corrected for syntax errors in the Item Fat Content classes. Outlet Size column was dropped because it was impossible to inferr the missing values from the original dataset, or to impute values correctly.
@@ -40,3 +40,19 @@ RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
 
 Summary of the Results:
 Mean Absolute Error (MAE) was used for evaluating the performance of the models. For the LASSO model, Training MAE was 834 and Testing MAE was 836. The Random Forest with bagging model improved significantly on the performance of the LASSO model. Its Training MAE was 742 and Testing MAE was 753. Granted the lower performance of the LASSO, it did help identify Item MPR, OUT027, & Supermarket Type1 features to be the ones most associated with higher predicted sales. Of the products, seafood stands out as the item type most associated with higher predicted sales.
+
+Here is the Data Dictionary for this dataset:
+
+Variable Name	Description
+Item_Identifier	Unique product ID
+Item_Weight	Weight of product
+Item_Fat_Content	Whether the product is low fat or regular
+Item_Visibility	The percentage of total display area of all products in a store allocated to the particular product
+Item_Type	The category to which the product belongs
+Item_MRP	Maximum Retail Price (list price) of the product
+Outlet_Identifier	Unique store ID
+Outlet_Establishment_Year	The year in which store was established
+Outlet_Size	The size of the store in terms of ground area covered
+Outlet_Location_Type	The type of area in which the store is located
+Outlet_Type	Whether the outlet is a grocery store or some sort of supermarket
+Item_Outlet_Sales	Sales of the product in the particular store. This is the target variable to be predicted.
